@@ -1,0 +1,231 @@
+/* Genel reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background: #fff;
+    color: #000;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+/* Üst kısım (logo, tel numara, buton) */
+.header-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo img {
+    height: 90px;
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.tel-num a {
+    text-decoration: none;
+    color: #b50012; /* kırmızı */
+    font-size: 18px;
+    font-weight: thin;
+}
+
+.header-button .btn {
+    padding: 14px 24px;
+    background: #b50012; /* kırmızı */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: background 0.3s ease;
+}
+
+.header-button .btn:hover {
+    background: #90000f;
+}
+
+/* Menü */
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 50px; /* menü aralıkları */
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #111;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #b50012;
+}
+.hero {
+    position: relative;
+    height: 76vh;
+    background: url("../images/laser-slider-img.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+   
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    padding: 0 20px;
+
+}
+
+.hero h1 {
+    font-size: 32px;
+    line-height: 1.3;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    font-weight: 100;
+}
+
+/* Hizmet ikonları */
+.hero-services {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+.hero-services .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-services svg {
+    height: 50px;
+    filter: brightness(0) invert(1); /* ikonları beyaz yapar */
+}
+
+.hero-services span {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: thin;
+}
+
+/* Buton */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #fff;
+    color: #b50012;
+    font-weight: 100;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #b50012;
+    color: #fff;
+}
+/* Bölüm geneli */
+.why-choose {
+    padding: 80px 20px;
+    text-align: center;
+    background: #fff;
+    color: #333;
+}
+
+.why-choose .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Başlık */
+.why-choose h2 {
+    font-size: 28px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* Paragraflar */
+.why-choose p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Kutu alanı */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap; /* mobilde alta düşsün */
+}
+
+/* Kutu stili */
+.feature-box {
+    background: linear-gradient(180deg, #333, #111);
+    color: #fff;
+    padding: 40px 20px;
+    flex: 1;
+    max-width: 300px;
+    min-width: 250px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-8px);
+}
+
+/* İkon */
+.feature-box svg {
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+/* Başlık */
+.feature-box h3 {
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    line-height: 1.4;
+}
