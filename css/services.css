@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #f7f7f7;
+    color: #000;
+    font-weight: 100;
+    overflow-x: hidden;
+}
+
+.quote-section {
+    background: url('../images/laser-slider-img.jpg') no-repeat center center/cover;
+    padding: 80px 20px;
+    color: white;
+}
+
+
+.quote-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    justify-content: center;
+}
+
+
+.quote-text {
+    flex: 1 1 500px;
+    max-width: 500px;
+    text-align: center
+}
+
+
+.quote-text h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+
+.quote-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+
+.quote-form {
+    flex: 1 1 500px;
+    background: #1d1d1f;
+    padding: 30px;
+    border-radius: 4px;
+}
+
+
+.quote-form h4 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: lighter;
+    color: #fff;
+}
+
+
+.quote-form h4 span {
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+.quote-form input,
+.quote-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: none;
+    font-size: 14px;
+}
+
+
+.quote-form textarea {
+    min-height: 100px;
+}
+
+
+.inline-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+
+.inline-inputs input {
+    flex: 1;
+}
+/* BU KISIM HATALI
+.checkbox-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 10px 0;
+  color: white;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.checkbox-row input[type="checkbox"] {
+  margin-top: 3px;
+  transform: scale(1.2);
+  accent-color: #b5001e;
+}
+
+.checkbox-row a {
+  color: #ff4d4d;
+  text-decoration: underline;
+}
+*/
+
+.quote-form button {
+    width: 100%;
+    background-color: #c00;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+
+.quote-form button:hover {
+    background-color: #a00;
+}
+
+
+/* SERVİCES SECTION */
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 0;
+  background-color: #f9f9f9;
+  flex-direction: row;
+}
+
+.service-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.service-card .overlay {
+  padding: 40px 0 20px;
+}
+
+.service-card h2 {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.service-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 20px 0;
+  color: white;
+}
+
+.service-card .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: white;
+  color: #b5001e;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.service-card .btn:hover {
+  background: #b5001e;
+  color: white;
+}
+
+.service-card.red {
+  background: url('../images/laser-slider-img.jpg') no-repeat center/cover, #b5001e;
+}
+
+.service-card.dark {
+  background: url('../images/laser-img-2.jpg') no-repeat center/cover, #121212;
+}
+
+.service-card.light {
+  color: #333;
+}
+
+.service-card.light p,
+.service-card.light h2 {
+  color: #333;
+}
+
+.service-card.light .btn {
+  background: #fff;
+  color: #b5001e;
+}
