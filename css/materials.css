@@ -1,0 +1,567 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #fcfcfc;
+  color: #000;
+  font-weight: 100;
+  overflow-x: hidden;
+
+}
+/* Header */
+.header {
+    width: 100%;
+    /*position: fixed;*/
+    border-bottom: 1px solid #eee;
+    background-color: white;
+    z-index: 1000;
+}
+
+/* Üst kısım (logo, tel numara, buton) */
+.header-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 40px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo img {
+    height: 90px;
+    max-width: 100%;
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tel-num a {
+    text-decoration: none;
+    color: #b50012;
+    /* kırmızı */
+    font-size: 18px;
+    font-weight: thin;
+}
+
+.header-button .btn {
+    padding: 14px 24px;
+    background: #b50012 !important;
+    /* kırmızı */
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: bold !important;
+    border-radius: 3px;
+    transition: background 0.3s ease;
+    white-space: nowrap;
+}
+
+.header-button .btn:hover {
+    background: #90000f;
+}
+
+/* Menü */
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    overflow-x: auto;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    /* menü aralıkları */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #111;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.menu ul li a:hover {
+    color: #b50012;
+}
+
+/*HERO*/
+.hero {
+    height: 500px;
+    background: url("../images/laser-slider-img.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    line-height: 1.3;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    font-weight: lighter !important;
+    letter-spacing: 0.5px;
+}
+
+/* Hizmet ikonları */
+.hero-services {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-services .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    min-width: 120px;
+}
+
+.hero-services svg {
+    height: 50px;
+    filter: brightness(0) invert(1);
+    /* ikonları beyaz yapar */
+    max-width: 100%;
+}
+
+.hero-services span {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: thin;
+    text-align: center;
+}
+
+/* Buton */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #fff !important;
+    color: #b50012 !important;
+    font-weight: 100;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    background: #b50012 !important;
+    color: #fff !important;
+}
+/* WHY CHOOSE */
+.why-choose {
+    padding: 80px 20px;
+    text-align: center;
+    background: #fff;
+    color: #333;
+}
+
+.why-choose .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Başlık */
+.why-choose h2 {
+    font-size: 28px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* Paragraflar */
+.why-choose p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Kutu alanı */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    /* mobilde alta düşsün */
+}
+
+/* Kutu stili */
+.feature-box {
+    background: linear-gradient(180deg, #333, #111);
+    color: #fff;
+    padding: 40px 20px;
+    flex: 1;
+    max-width: 300px;
+    min-width: 250px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-8px);
+}
+
+/* İkon */
+.feature-box svg {
+    height: 60px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+/* Başlık */
+.feature-box h3 a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+    transition: color 0.3s ease;
+}
+
+.feature-box h3 a:hover {
+    color: #b50012;
+    /* hover'da kırmızı olur */
+}
+/*MATERIALS*/
+.materials {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.materials-info {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #444;
+  font-size: 14px;
+}
+
+.materials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.material-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 4px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.material-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.material-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+
+.material-card h3 {
+  font-size: 26px;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-weight: lighter;
+}
+
+.material-card .cutting {
+  color: #b8001c;
+  font-size: 14px;
+  font-weight: 600;
+  font-weight: lighter;
+  margin-bottom: 8px;
+}
+
+.material-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+/*SECTOR GRID*/
+.industry-sectors {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+}
+
+.industry-sectors h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+.industry-sectors p {
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.sectors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.sector-card {
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.sector-card:hover {
+  transform: translateY(-8px);
+}
+
+.sector-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.sector-card h3 {
+  font-size: 14px;
+  font-weight: lighter;
+  margin: 15px 0;
+  letter-spacing: 3px;
+  color: #333;
+}
+
+.view-all-btn {
+  display: inline-block;
+  margin-top: 40px;
+  background: #b8001c;
+  color: #fff;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%, 0% 25%);
+  transition: background 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background: #000000;
+}
+
+/*Pop-up*/
+   .cta-section {
+  background: url('../images/l24-spark-background-1-new.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(50px); /* Aşağıdan başla */
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.cta-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.cta-content .guarantee {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.cta-content p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #111;
+  color: white;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-weight: bold;
+  border-radius: 2px;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #333;
+}
+
+/* Animasyon: aşağıdan yukarı */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .accreditation-review {
+        flex-direction: column;
+    }
+
+    .next-btn {
+        bottom: 30px;
+        right: 20px;
+    }
+}
+
+/*FOOTER*/
+.site-footer {
+    background-color: #f8f8f8;
+    font-family: 'Helvetica Neue', sans-serif;
+    padding: 60px 20px 30px;
+    font-size: 14px;
+    color: #111;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-col {
+    flex: 1 1 300px;
+    min-width: 250px;
+}
+
+.footer-logo {
+    width: 160px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.footer-col h4 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-col address {
+    font-style: normal;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footer-phone {
+    color: #b8001c;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col li {
+    margin: 6px 0;
+    letter-spacing: 1px;
+}
+
+.social-icons img {
+    width: 24px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.certs img {
+    height: 40px;
+    margin: 10px 10px 0 0;
+}
+
+hr {
+    margin: 40px auto;
+    border: none;
+    border-top: 1px solid #ccc;
+    max-width: 1200px;
+}
+
+.footer-links,
+.legal-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-links a,
+.legal-links a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.copyright {
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    line-height: 1.5;
+    max-width: 1000px;
+    margin: 0 auto;
+}
